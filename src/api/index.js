@@ -3,7 +3,7 @@
  */
 // import Vue from 'vue'
 import base from './base'
-import axios from '@/plugins/http.js'
+import http from '@/plugins/http.js'
 
 const api = {
   /**
@@ -12,7 +12,7 @@ const api = {
    * @param {密码} password
    */
   getLoginData (username) {
-    return axios.post(base.loginPath, username)
+    return http.post(base.loginPath, username)
   }
 }
 // Vue.prototype.$http = api

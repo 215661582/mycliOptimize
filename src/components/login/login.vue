@@ -47,6 +47,13 @@ export default {
     async getLoginData () {
       const res = await this.$http.getLoginData(this.formData)
       console.log(res.data)
+      const { meta: { msg, status } } = res.data
+      if (status === 200) {
+        this.$message.success(msg)
+        this.formData = {}
+      } else {
+        this.$message.error(msg)
+      }
     },
     resetForm () {
       this.formData = {}
