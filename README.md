@@ -22,3 +22,7 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+### 项目初始化
++ 安装了 element-ui
++ 封装了 axios 
